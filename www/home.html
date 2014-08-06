@@ -1,0 +1,39 @@
+<ons-navigator title="Navigator" var="appNavigator">
+    
+    <ons-page ng-controller="HomeController">
+        
+        <ons-toolbar>
+            <div class="left">
+            <ons-toolbar-button onclick="ons.slidingMenu.toggleMenu()">
+            <ons-icon icon="bars">
+            </ons-toolbar-button>
+            </div>
+            
+            <div class="center"><b>LoveWorld TV Mobile</b></div>
+                
+            <div class="right">
+            <ons-toolbar-button ng-click="appNavigator.pushPage('settings.html', {title: 'Settings'})">
+            <ons-icon icon="ellipsis-v"></ons-icon>
+            </ons-toolbar-button>
+            </div>  
+            
+        </ons-toolbar>
+        
+        <ons-scroller>
+              <img src="img/lwtv_home.jpg" class="banner" />
+              
+            <div class="grid-menu">
+                <div class="centering-and-alignment" ng-repeat="row in items | partition:3">
+                  <div class="grid-menu-item list__item list__item--tappable" ng-repeat="item in row" ng-click="showDetail(($parent.$index*row.length)+$index);">
+                    <ons-icon icon="{{item.icon}}"></ons-icon>
+                    <div class="grid-menu-item-label">{{item.title}}</div>
+                  </div>
+                </div>
+            </div>
+
+        </ons-scroller>
+            
+        
+    </ons-page>
+
+</ons-navigator>

@@ -1,0 +1,93 @@
+<ons-page ng-controller="ContactController">
+    
+    <ons-toolbar>
+    <div class="left">
+    <ons-toolbar-button onclick="ons.slidingMenu.toggleMenu()">
+    <ons-icon icon="bars">
+    </ons-toolbar-button>
+    </div>
+    <div class="center">Contact Us</div>
+    </ons-toolbar>
+<img src="img/lwtv_contact.jpg" class="banner" />
+    
+    <section style="padding: 10px">
+
+        
+         Please feel free to contact us using any of our details below.
+     
+      <h4>By Post:</h4>
+    
+    
+     <div class="content_holder">
+      
+         <div style="float: left; margin-right:15px; vertical-align: middle;" class="desc_text">
+            
+             <img src="img/mail.png" width="100px"/>
+            
+            </div>  
+              
+             <p style="margin-top:10px;">
+<b>Loveworld TV UK</b><br/>
+Unit 2 Standard Industial Estate,<br/>
+Henley Road,<br/>
+London E16 2ES.
+              </p>
+            
+          </div>
+    <br clear="all"/>
+    
+     <div class="content_holder">
+      
+         <div style="float: left; margin-right:15px; vertical-align: middle;" class="desc_text">
+            
+             <img src="img/mail.png" width="100px"/>
+            
+            </div>  
+              
+             <p style="margin-top:11px;">
+<b>Loveworld TV USA</b><br/>
+200 E. Arrowhead Drive <br/>
+Suite #O-6 <br/>
+Charlotte, NC 28213
+              </p>
+            
+          </div>
+
+    
+    <br clear="all"/>
+        
+    
+     <h4>Telephone:</h4>
+         
+     <div class="content_holder">
+      
+         <div style="float: left; margin-right:10px; vertical-align: middle;" class="desc_text">
+            
+             <img src="img/phone.png" width="80px"/>
+            
+            </div>  
+         <p></p><b>UK:</b> +44(0)207 511 5830 <br/>
+     <b>USA:</b> +1-704-780-4970
+         </p>
+     
+     
+     </div>
+        
+<br clear="all"/>
+        
+         
+        
+              
+      <h4>Email:</h4>
+        
+
+        <input type="text" class="text-input" placeholder="Subject" id="subject" style="width:100%; margin-bottom:10px;">
+
+        <textarea class="textarea" rows="10" placeholder="Message" id="message" style="width:100%; margin-bottom:10px;"></textarea>
+
+        <ons-button modifier="large" ng-click="submitForm()">
+        Send Message
+        </ons-button>
+    </section>  
+
+</ons-page>
